@@ -6,7 +6,7 @@ import numpy as np
 
 
 def read_data(data_path):
-    credit_card_data = pd.read_csv(data_path, nrows=50000)
+    credit_card_data = pd.read_csv(data_path)
     data = np.array(credit_card_data)
     np.random.shuffle(data)
     return data
